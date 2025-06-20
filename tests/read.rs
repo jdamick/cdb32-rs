@@ -1,4 +1,6 @@
-use cdb2::CDB;
+use std::fs;
+
+use cdb2::{CDBWriter, CDB};
 
 #[test]
 fn test_one() {
@@ -19,4 +21,28 @@ fn test_two() {
             .unwrap(),
         b"Got it."
     );
+}
+
+#[test]
+fn test_empty_cdb() {
+    let filename = "tests/empty.cdb";
+    let mut cdb = CDBWriter::create(filename).unwrap();
+    cdb.finish().unwrap();
+    // make sure we can read what was just written.
+    let cdb = CDB::open(filename);
+    assert!(cdb.is_ok());
+
+    let cdb = cdb.unwrap();
+
+    // check that find works
+    let iter = cdb.find(b"key");
+    assert_eq!(iter.count(), 0);
+
+    // check that get works
+    let get_result = cdb.get(b"key");
+    assert!(get_result.is_none());
+
+    assert_eq!(cdb.iter().count(), 0);
+
+    fs::remove_file(filename);
 }
