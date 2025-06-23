@@ -1,6 +1,7 @@
 cdb32-rs
 ====
 
+[![Rust](https://github.com/jdamick/cdb32-rs/actions/workflows/rust.yml/badge.svg?branch=master)](https://github.com/jdamick/cdb32-rs/actions/workflows/rust.yml)
 [![Crate](https://img.shields.io/crates/v/cdb32.svg)](https://crates.io/crates/cdb32)
 
 This library provides pure Rust support for reading and writing
