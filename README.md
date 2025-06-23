@@ -1,7 +1,7 @@
 cdb32-rs
 ====
 
-[![Crate](https://img.shields.io/crates/v/cdb3.svg)](https://crates.io/crates/cdb3)
+[![Crate](https://img.shields.io/crates/v/cdb32.svg)](https://crates.io/crates/cdb32)
 
 This library provides pure Rust support for reading and writing
 [CDB][cdb] files.  A CDB file is a constant key-value on-disk hash
