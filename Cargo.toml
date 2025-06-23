@@ -1,6 +1,6 @@
 [package]
 name = "cdb32"
-version = "0.0.1"
+version = "0.0.2"
 authors = ["github.com/jdamick", "Kan-Ru Chen <kanru@kanru.info>"]
 description = "Pure Rust library to read and write 32-bit CDB files"
 homepage = "https://github.com/jdamick/cdb32-rs"
