@@ -4,7 +4,8 @@ on:
       - "*"
 
 name: Publish
-  
+
+jobs:
   crates_io_publish:
     name: Publish (crates.io)
     needs:
