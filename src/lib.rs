@@ -11,7 +11,7 @@
 //!
 //! ```
 //! # fn main() -> std::io::Result<()> {
-//! use cdb2::CDB;
+//! use cdb32::CDB;
 //!
 //! let cdb = CDB::open("tests/test1.cdb")?;
 //! for result in cdb.find(b"one") {
@@ -28,7 +28,7 @@
 //! # let tmp_dir = tempfile::tempdir()?;
 //! # let tmp_path = tmp_dir.path();
 //! # std::env::set_current_dir(&tmp_path)?;
-//! use cdb2::CDBWriter;
+//! use cdb32::CDBWriter;
 //!
 //! let mut cdb = CDBWriter::create("temporary.cdb")?;
 //! cdb.add(b"one", b"Hello, ")?;

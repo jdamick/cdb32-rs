@@ -35,7 +35,7 @@ fn err_toobig<T>() -> Result<T> {
 /// # let tmp_path = tmp_dir.path();
 /// # std::env::set_current_dir(&tmp_path)?;
 /// let file = std::fs::File::create("temporary.cdb")?;
-/// let mut cdb = cdb2::CDBMake::new(file)?;
+/// let mut cdb = cdb32::CDBMake::new(file)?;
 /// cdb.add(b"one", b"Hello,")?;
 /// cdb.add(b"two", b"world!")?;
 /// cdb.finish()?;
@@ -165,7 +165,7 @@ impl CDBMake {
 /// # let tmp_dir = tempfile::tempdir()?;
 /// # let tmp_path = tmp_dir.path();
 /// # std::env::set_current_dir(&tmp_path)?;
-/// use cdb2::CDBWriter;
+/// use cdb32::CDBWriter;
 ///
 /// let mut cdb = CDBWriter::create("temporary.cdb")?;
 /// cdb.add(b"one", b"Hello")?;

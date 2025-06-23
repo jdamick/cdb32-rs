@@ -1,10 +1,10 @@
 [package]
-name = "cdb2"
-version = "0.7.1"
-authors = ["Kan-Ru Chen <kanru@kanru.info>"]
-description = "Pure Rust library to read and write CDB files"
-homepage = "https://github.com/kanru/cdb2-rs"
-repository = "https://github.com/kanru/cdb2-rs"
+name = "cdb32"
+version = "0.0.1"
+authors = ["github.com/jdamick", "Kan-Ru Chen <kanru@kanru.info>"]
+description = "Pure Rust library to read and write 32-bit CDB files"
+homepage = "https://github.com/jdamick/cdb32-rs"
+repository = "https://github.com/jdamick/cdb32-rs"
 readme = "README.md"
 license = "Unlicense"
 rust-version = "1.70"
@@ -14,7 +14,7 @@ edition = "2021"
 memmap2 = "0.9.1"
 
 [dev-dependencies]
-criterion = "0.5"
+criterion = "0.6"
 tempfile = "3.9.0"
 
 [workspace]

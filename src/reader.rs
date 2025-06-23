@@ -18,7 +18,7 @@ const KEYSIZE: usize = 32;
 ///
 /// ```
 /// # fn main() -> std::io::Result<()> {
-/// use cdb2::CDB;
+/// use cdb32::CDB;
 ///
 /// let cdb = CDB::open("tests/test1.cdb")?;
 /// for result in cdb.find(b"one") {
@@ -43,7 +43,7 @@ impl CDB {
     ///
     /// ```
     /// # fn main() -> std::io::Result<()> {
-    /// use cdb2::CDB;
+    /// use cdb32::CDB;
     ///
     /// let cdb = CDB::open("tests/test1.cdb")?;
     /// # Ok(())
@@ -105,7 +105,7 @@ impl CDB {
     ///
     /// ```
     /// # fn main() -> std::io::Result<()> {
-    /// use cdb2::CDB;
+    /// use cdb32::CDB;
     ///
     /// let cdb = CDB::open("tests/test1.cdb")?;
     /// if let Some(record) = cdb.get(b"one") {
@@ -125,7 +125,7 @@ impl CDB {
     ///
     /// ```
     /// # fn main() -> std::io::Result<()> {
-    /// use cdb2::CDB;
+    /// use cdb32::CDB;
     ///
     /// let cdb = CDB::open("tests/test1.cdb")?;
     /// for result in cdb.find(b"one") {
@@ -144,7 +144,7 @@ impl CDB {
     ///
     /// ```
     /// # fn main() -> std::io::Result<()> {
-    /// use cdb2::CDB;
+    /// use cdb32::CDB;
     ///
     /// let cdb = CDB::open("tests/test1.cdb")?;
     /// for result in cdb.iter() {

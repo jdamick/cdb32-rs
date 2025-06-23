@@ -1,6 +1,6 @@
 use std::fs;
 
-use cdb2::{CDBWriter, CDB};
+use cdb32::{CDBWriter, CDB};
 
 #[test]
 fn test_one() {
