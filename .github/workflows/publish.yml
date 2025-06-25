@@ -65,11 +65,4 @@ jobs:
       # have passed.
       - name: "cargo release publish"
         run: |-
-          cargo release \
-            publish \
-            --workspace \
-            --all-features \
-            --allow-branch HEAD \
-            --no-confirm \
-            --no-verify \
-            --execute
+          cargo release publish --execute --no-tag --all-features --allow-branch HEAD --no-confirm 
