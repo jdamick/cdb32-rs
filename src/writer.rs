@@ -42,6 +42,7 @@ fn err_toobig<T>() -> Result<T> {
 /// # Ok(())
 /// # }
 /// ```
+#[derive(Debug)]
 pub struct CDBMake {
     entries: Vec<Vec<HashPos>>,
     pos: u32,
@@ -173,6 +174,7 @@ impl CDBMake {
 /// # Ok(())
 /// # }
 /// ```
+#[derive(Debug)]
 pub struct CDBWriter {
     dstname: PathBuf,
     tmpname: PathBuf,

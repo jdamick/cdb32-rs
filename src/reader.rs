@@ -166,6 +166,7 @@ pub type CDBIter<'a> = CDBValueIter<'a>;
 /// Iterator over a set of records in the CDB with the same key.
 ///
 /// See [`CDB::find`]
+#[derive(Debug)]
 pub struct CDBValueIter<'a> {
     cdb: &'a CDB,
     key: Vec<u8>,
@@ -260,6 +261,7 @@ impl<'a> Iterator for CDBValueIter<'a> {
 /// Iterator over all the records in the CDB.
 ///
 /// See [`CDB::iter`]
+#[derive(Debug)]
 pub struct CDBKeyValueIter<'a> {
     cdb: &'a CDB,
     pos: u32,
