@@ -27,6 +27,7 @@ const KEYSIZE: usize = 32;
 /// # Ok(())
 /// # }
 /// ```
+#[derive(Debug)]
 pub struct CDB {
     file: Mmap,
     size: usize,

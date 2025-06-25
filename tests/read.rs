@@ -26,7 +26,7 @@ fn test_two() {
 #[test]
 fn test_empty_cdb() {
     let filename = "tests/empty.cdb";
-    let mut cdb = CDBWriter::create(filename).unwrap();
+    let cdb = CDBWriter::create(filename).unwrap();
     cdb.finish().unwrap();
     // make sure we can read what was just written.
     let cdb = CDB::open(filename);
@@ -44,5 +44,5 @@ fn test_empty_cdb() {
 
     assert_eq!(cdb.iter().count(), 0);
 
-    fs::remove_file(filename);
+    let _ = fs::remove_file(filename);
 }
