@@ -1,6 +1,6 @@
 use std::{io::Result, path::PathBuf};
 
-use cdb2::CDB;
+use cdb32::CDB;
 
 pub fn main() -> Result<()> {
     let flags = xflags::parse_or_exit! {

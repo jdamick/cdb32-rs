@@ -18,7 +18,7 @@ criterion = "0.6"
 tempfile = "3.9.0"
 
 [workspace]
-members = ["fuzzer"]
+members = ["fuzzer", "dumper"]
 
 [[bench]]
 name = "cdb"

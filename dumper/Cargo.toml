@@ -1,0 +1,11 @@
+[package]
+name = "dumper"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+#cdb32 = { version = "0.1.0", path = ".." }
+cdb32 = { path = ".." }
+xflags = "0.3.2"
